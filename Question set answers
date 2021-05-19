@@ -1,0 +1,53 @@
+Inheritance
+Edward Matthew Kurniawan - 24400323216
+
+Question set 1
+a)	The Genus class is the super class of the Species class
+b)	The Specimen class employs the Species class in its instance variable, but they have no inheritance relation
+c)  Check the image file in the rar
+d)	The Genus class code is very reusable and could be used every time a Species object is created. meaning that
+    the code is very reusable and this will also avoid any duplicate code. The second benefit is that by writing the
+    code like this, it simplifies testing because a successful function inherited from the parent class does not need
+    to be tested again in the child class
+e)	1. Because the toString() method in the Genus class and the Species class returns different things
+    2. This property is called “overriding”
+
+Question set 2
+a)	Encapsulation is the process of hiding data. Storing the variables using the private or protected access modifier and constructing the setter and accessor methods to directly access the data.
+b)	1. Sensitive data is hidden to the public
+    2. It makes the class easier to debug in case of something going wrong
+c)	The code will be in the Genus.java file
+d)  One of the accessor method is the getName() method
+e)  One of the instance variable is the name variable
+f)  If the Specimen class is designed as a sub-class of the Species class, then the Species class code will have more
+    usability, but the downside is that the Species class will have to rely on the implementation of the Species
+    class to be fully working, meaning that the Species class will need to have consistent data with all Specimen
+    implementation
+
+Question set 3
+a)  The easiest way to implement markings is basically initializing the markings as an instance variable. Then we
+    could make a getter and setter method to access and change the marking as necessary
+b)  The method will be found in the Specimen class
+c)  The pseudocode will look something like this:
+
+    // animals is the array containing the Specimen objects
+    // UNIQUE is a collection, initialized as empty
+    // SPECIES is the Species object list
+    *Main idea is to loop NUMBER to the number of elements according to the array
+    NEW_SPECIES = true
+    UNIQUE.resetNext()
+    loop while UNIQUE.hasNext()
+    if UNIQUE.getNext() = species of animals[NUMBERS] then NEW_SPECIES = false end if
+    end loop
+    UNIQUE.resetNext()
+    loop while UNIQUE.getNext()
+    SPECIES = UNIQUE.getNext()
+    output SPECIES.toString()
+    end loop
+
+Question set 4
+a)  1. An ADT exports a type
+    2. it exports a set of operations
+    3. Operations of the interface are the one and only access mechanism to the type's data structure
+    4. Axioms and preconditions define the application domain of the type
+*FOR THE OTHER THINGS IN QUESTION SET 4, THE ANSWER IS IN THE DRIVER CLASS
